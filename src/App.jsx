@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import "./App.css";
 import missionImage from "./assets/black-nurse-their-workspace.jpg";
+import ceoImg from "./assets/aline-tene.jpeg";
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -67,20 +68,26 @@ function App() {
         <div className="mission-image">
           <img src={missionImage} alt="Health Universe Mission" />
         </div>
-        <p>
+        <p className="about-text">
           At Health Universe based in Little Rock, AR, we specialize in
           comprehensive kidney care and Hypertension for adults. The exceptional
           team understands that kidney disease is complex and patients need a
           team of committed professionals to manage their health and guide them
           through treatment.
         </p>
-        <p>
+        <p className="about-text">
           Kidney disease is a chronic condition that persist over time
           necessitating long-term medical attention. Our patients tailored care
           plans aim to:
         </p>
         <div className="vision-cards">
           <div className="vision-card">
+            <img
+              width="100"
+              height="100"
+              src="https://img.icons8.com/bubbles/100/1.png"
+              alt="1"
+            />
             <h3>Disease Prevention</h3>
             <p>
               Prevent disease progression through early intervention and
@@ -88,6 +95,12 @@ function App() {
             </p>
           </div>
           <div className="vision-card">
+            <img
+              width="100"
+              height="100"
+              src="https://img.icons8.com/bubbles/100/2.png"
+              alt="2"
+            />
             <h3>Quality of Life</h3>
             <p>
               Enhance the patient's quality of life with personalized treatment
@@ -95,6 +108,12 @@ function App() {
             </p>
           </div>
           <div className="vision-card">
+            <img
+              width="100"
+              height="100"
+              src="https://img.icons8.com/bubbles/100/3.png"
+              alt="3"
+            />
             <h3>Risk Management</h3>
             <p>
               Reduce the risk of complications through proactive monitoring and
@@ -104,25 +123,28 @@ function App() {
         </div>
       </section>
 
-      <section className="mission" id="mission">
-        <div className="mission-content">
-          <h2>Mission</h2>
-          <p>
-            Health Universe mission is to inspire hope and contribute to health
-            and well-being by providing high quality care to every patient
-            through integrated clinical practice, education and research.
-          </p>
-        </div>
-      </section>
+      <section className="mission-vision-container">
+        <section className="mission" id="mission">
+          <div className="mission-content">
+            <h2>Mission</h2>
+            <p>
+              Health Universe mission is to inspire hope and contribute to
+              health and well-being by providing high quality care to every
+              patient through integrated clinical practice, education and
+              research.
+            </p>
+          </div>
+        </section>
 
-      <section className="vision" id="vision">
-        <h2>Vision</h2>
-        <p>
-          Health Universe will reduce kidney care disparity by providing
-          accessible and high quality kidney care to individuals of all
-          backgrounds in the US as well as in the West and Central Africa
-          through direct patient care and healthcare workers training.
-        </p>
+        <section className="vision" id="vision">
+          <h2>Vision</h2>
+          <p>
+            Health Universe will reduce kidney care disparity by providing
+            accessible and high quality kidney care to individuals of all
+            backgrounds in the US as well as in the West and Central Africa
+            through direct patient care and healthcare workers training.
+          </p>
+        </section>
       </section>
 
       <section className="services" id="services">
@@ -190,7 +212,7 @@ function App() {
         <div className="founder-card">
           <img
             className="founder-img"
-            src={missionImage}
+            src={ceoImg}
             alt="Aline V. Lowah-Kuate"
           />
           <div className="founder-info">
