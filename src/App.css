@@ -106,6 +106,10 @@ h1 {
   transition: all 0.3s linear;
 }
 
+.mission-vision-container {
+  padding: 0;
+}
+
 /* Section Common Styles */
 section {
   padding: 5rem 8rem;
@@ -201,7 +205,7 @@ section ul li {
   gap: 2rem;
   max-width: 1200px;
   margin: 0 auto;
-  margin-top: 20px;
+  margin-top: 50px;
 }
 
 .vision-card {
@@ -285,22 +289,13 @@ section ul li {
 }
 
 .founder-info ul {
-  text-align: left;
-  padding-left: 1.5rem;
+  text-align: center;
 }
 
 .founder-info li {
   color: var(--text-light);
   margin-bottom: 0.8rem;
   position: relative;
-  padding-left: 1rem;
-}
-
-.founder-info li::before {
-  content: "•";
-  color: var(--primary-color);
-  position: absolute;
-  left: -1rem;
 }
 
 /* Footer */
@@ -344,7 +339,6 @@ section ul li {
   }
 
   .about {
-    margin-top: 3rem;
     padding: 3rem 2rem;
   }
 
