@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import "./App.css";
-import missionImage from "./assets/black-nurse-their-workspace.jpg";
+import missionImage from "./assets/nurse.jpg";
 import ceoImg from "./assets/aline-tene.jpeg";
 
 function App() {
@@ -172,8 +172,8 @@ function App() {
             <img
               width="50"
               height="50"
-              src="https://img.icons8.com/ios-filled/50/1D4ED8/dialysis-machine.png"
-              alt="dialysis-machine"
+              src="https://img.icons8.com/external-jumpicon-glyph-ayub-irawan/32/1D4ED8/external-Kidneys-diabetes-jumpicon-(glyph)-jumpicon-glyph-ayub-irawan.png"
+              alt="external-Kidneys-diabetes-jumpicon-(glyph)-jumpicon-glyph-ayub-irawan"
             />
             Dialysis treatment (Hemodialysis and Peritoneal dialysis)
           </li>
@@ -181,8 +181,8 @@ function App() {
             <img
               width="50"
               height="50"
-              src="https://img.icons8.com/ios-filled/50/1D4ED8/training.png"
-              alt="training"
+              src="https://img.icons8.com/external-wanicon-lineal-wanicon/50/1D4ED8/external-dialysis-hospital-wanicon-lineal-wanicon.png"
+              alt="external-dialysis-hospital-wanicon-lineal-wanicon"
             />
             Home dialysis training
           </li>
@@ -210,14 +210,17 @@ function App() {
       <section className="founder" id="founder">
         <h2>Founder and CEO</h2>
         <div className="founder-card">
-          <img
-            className="founder-img"
-            src={ceoImg}
-            alt="Aline V. Lowah-Kuate"
-          />
-          <div className="founder-info">
+          <div className="founder-img-container">
+            <img
+              className="founder-img"
+              src={ceoImg}
+              alt="Aline V. Lowah-Kuate"
+            />
             <h3>Aline V. Lowah-Kuate</h3>
             <p>Nephrology Nurse Practitioner, M.S. Ed, MSN, APRN, FNP, BC</p>
+          </div>
+
+          <div className="founder-info">
             <ul>
               <li>
                 Graduate of University of Detroit Mercy and Oakland University,
